@@ -1,0 +1,209 @@
+span{
+    color: #F05454;
+}
+
+body{
+    background-color: black;
+    height: 410vh;
+    color: #fff;
+}
+.container-fluid{
+    padding: 10% 12%;
+    background: url(back.png);
+    height:100vh;
+    
+}
+.card .btn{
+    background-color: #F05454;
+    
+    color: black;
+}
+.card .btn:hover{
+    letter-spacing: 0.2rem;
+    transition: 0.5s;
+}
+.style{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    
+  }
+  .style li a {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway;
+    font-weight: 700;
+  }
+  .log a{
+    text-decoration: none;
+    color: black;
+    font-family: lobster;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .navbar{
+    padding: 10px 12%;
+    background-color: #fff;
+}
+  .style li a:hover{
+    color: #F05454;
+    text-decoration: underline;
+  }
+.container-fluid h1{
+    font-family: oswald;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.container-fluid h2{
+    font-family: Dancing Script;
+    font-weight: 100;
+    font-size: 4rem;
+    margin-top: 20px;
+    color: #fff;
+    
+}
+
+.sani2{
+    padding-top: 150px;
+    color: #fff;
+}
+
+.sani2 h3{
+    color: #fff;
+}
+.paragraphs{
+    padding: 5% 30% 5% 12%;
+}
+.paragraphs .para-1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.paragraphs .para-2{
+    color: rgb(197, 192, 192);
+}
+h5{
+    color: #fff;
+  
+}
+.card{
+    background-color: black;
+}
+
+.card .btn{
+    margin-top: 10px;
+    border-style: none;
+}
+.projects{
+    padding: 3% 12%;
+   grid-gap:30px;
+}
+.projects h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: raleway;
+    font-weight: 600;
+}
+.card img:hover{
+    width: 300px;
+    transition: 0.5s ease;
+}
+.navbar-nav a{
+    margin-left: 10px;
+}
+.btn2{
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    font-family: oswald;
+    text-transform: uppercase;
+}
+.panel{
+    padding: 0 12%;
+     background-color: black;
+    max-height: 0;
+    display: none;
+    overflow-wrap: normal;
+    transition: max-height 0.2s ease-out;
+}
+.sh1{
+    color: #F05454;
+    margin-bottom: 30px;
+}
+
+.toggle-btn{
+    border-style: none;
+    background-color: #fff;
+    size: 1.5rem;
+    opacity: 0%;
+    
+    
+}
+@media only screen and ( max-width: 678px)  {
+    .style{
+        display: none;
+    }    
+    .toggle-btn{
+        opacity: 100%;
+    }
+    .container-fluid h1{
+        font-size: 3rem;
+    }
+    .left img{
+        display: none;
+    }
+
+}
+.about{
+    padding: 2% 0% 2% 12%
+}
+.about h1{
+    text-transform: uppercase;
+    font-family: raleway;
+    font-weight: 600;
+}
+.about p{
+    margin-top: 50px;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+
+}
+.contact{
+    padding: 2% 7%;
+}
+.cimg h1{
+    font-family: raleway;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.icons{
+    padding-top: 80px;
+}
+.icons h3{
+    margin-left: 10px;
+    padding: 10px 0 10px 0;
+}
+.icons p{
+    font-family: oswald;
+    padding-left: 20px;
+    opacity: 0.8;
+}
+.icons a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+    opacity: 0.8;
+}
+.icons a:hover{
+    color: #F05454;
+}
+.end{
+    padding-left: 40%;
+    padding-bottom: 5px;
+}
