@@ -256,10 +256,10 @@
   margin-left: 10px;
 }
 .card-body #two {
-  background-image: url("./assets/book2.png");
+  background-image: url(./assets/book2.png);
 }
 .card-body #third {
-  background-image: url("./assets/todo2.png");
+  background-image: url(./assets/todo2.png);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
