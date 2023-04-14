@@ -1,0 +1,496 @@
+.home {
+  height: 120vh;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.25);
+  background-color: transparent;
+}
+.navbar img {
+  width: 150px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar li {
+  list-style: none;
+  padding-left: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-family: raleway;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+.navbar a:hover {
+  border-bottom: 3px solid rgb(77, 80, 78);
+  transition: 0.3s ease;
+}
+
+.hero {
+  display: flex;
+  margin-top: 80px;
+}
+.hero h1 {
+  font-family: raleway;
+  font-weight: 800;
+  color: #000;
+  font-size: 3.6rem;
+}
+.hero p {
+  font-family: tilt neon;
+  text-transform: capitalize;
+  font-family: 1rem;
+  line-height: 1.3;
+  color: gray;
+  font-weight: 100;
+  opacity: 0.8;
+  width: 300px;
+  position: relative;
+  bottom: 20px;
+  margin-left: 5px;
+}
+.hero img {
+  margin-top: 50px;
+  position: relative;
+  right: 35px;
+}
+.hero .right {
+  position: relative;
+  right: 60px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .home {
+    height: 125vh;
+  }
+  .navbar {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    width: 230px;
+  }
+  .hero img {
+    position: relative;
+    right: 10px;
+    width: 350px;
+  }
+  .hero .right {
+    position: relative;
+    left: 40px;
+  }
+  .hero .left {
+    position: relative;
+    left: 40px;
+  }
+}
+.about {
+  margin-top: 40px;
+  height: 100vh;
+}
+
+.upper {
+  height: 70vh;
+  width: 90%;
+  background-color: white;
+  margin: 0% 5%;
+  padding: 2%;
+  z-index: 1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.upper h1 {
+  font-size: 2.5rem;
+  margin-left: 50px;
+  color: black;
+  border: 2px solid black;
+  font-family: raleway;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding: 1% 3%;
+  background-color: white;
+  width: 250px;
+  font-weight: 800;
+}
+
+.content {
+  display: flex;
+}
+
+.para {
+  font-family: tilt neon;
+  padding: 3%;
+  width: 550px;
+  letter-spacing: 0.6px;
+}
+
+.right img {
+  position: relative;
+  left: 160px;
+  top: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .about {
+    margin-top: 400px;
+    height: 80vh;
+  }
+  .right img {
+    display: none;
+  }
+  .para {
+    width: 290px;
+  }
+  hr {
+    display: none;
+  }
+  .upper h1 {
+    font-size: 1.8rem;
+    margin-left: 50px;
+    color: black;
+    border: 2px solid black;
+    font-family: raleway;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding: 6px;
+    background-color: white;
+    width: 150px;
+    font-weight: 800;
+  }
+}
+.portfolio {
+  height: 120vh;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  margin: auto;
+  color: black;
+  font-family: raleway;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.heading .outer {
+  background-color: white;
+  position: relative;
+  top: 35px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.heading hr {
+  width: 70%;
+  border-style: none;
+  border-bottom: 1px solid black;
+  margin: auto;
+}
+
+.all {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.card-body {
+  margin-top: 120px;
+  height: 270px;
+  width: 320px;
+  margin-right: 80px;
+  background-color: rgb(246, 250, 250);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.card-body:hover {
+  transition: 0.3s ease;
+  scale: 1.1;
+}
+.card-body .look {
+  display: none;
+}
+.card-body .card-img {
+  position: relative;
+  top: 7px;
+  left: 4px;
+  bottom: 6px;
+  width: 300px;
+  height: 195px;
+  background-image: url(../assets/real2.png);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-body .card-img:hover {
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.5) inset;
+}
+.card-body .card-img:hover a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  margin: auto;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: raleway;
+  border: 1px solid white;
+  padding: 4px 6px;
+}
+.card-body p {
+  font-family: raleway;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 4px;
+  margin-left: 10px;
+}
+.card-body #two {
+  background-image: url("../assets/book2.png");
+}
+.card-body #third {
+  background-image: url("../assets/todo2.png");
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio {
+    height: 130vh;
+    margin-top: 160px;
+  }
+  .heading h1 {
+    font-size: 2.4rem;
+    border-bottom: 1px solid black;
+    position: relative;
+    right: 24px;
+  }
+  .heading .outer {
+    position: relative;
+  }
+  .heading hr {
+    display: none;
+  }
+  .card-body {
+    height: 270px;
+    width: 340px;
+  }
+  .card-body .card-img {
+    width: 340px;
+    height: 195px;
+  }
+  .all {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+.skills {
+  height: 100vh;
+}
+.skills .flex {
+  display: flex;
+  margin-top: 60px;
+  gap: 60px;
+  margin-left: 30px;
+}
+.skills .part {
+  display: flex;
+  margin-top: 10px;
+}
+
+.parts h1 {
+  font-family: dancing script;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.parts img {
+  padding-top: 10%;
+  position: relative;
+  z-index: 1;
+  bottom: 20px;
+  margin-left: 5px;
+}
+.parts .title {
+  font-family: raleway;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.parts span {
+  color: rgb(92, 90, 90);
+  font-family: tilt neon;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  width: 200px;
+  font-weight: 200;
+  position: relative;
+  top: 8px;
+  left: 2px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .skills {
+    height: 200vh;
+    margin: 130px 0;
+    position: relative;
+    right: 10px;
+  }
+  .skills .flex {
+    flex-direction: column;
+  }
+  .parts {
+    position: relative;
+    right: 10px;
+  }
+  .parts span {
+    width: 50px;
+  }
+}
+.contact {
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.parent {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+}
+.parent .info {
+  display: flex;
+  flex-direction: column;
+}
+.parent .info label {
+  font-family: raleway;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.parent .info input {
+  width: 550px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: #f6fafa;
+  border-style: none;
+  border-radius: 6px;
+}
+.parent .info textarea {
+  width: 550px;
+  height: 100px;
+  margin-left: 10px;
+  background-color: #f6fafa;
+  border-style: none;
+  border-radius: 6px;
+}
+.parent .info button {
+  color: #fff;
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: teal;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.parent .daya {
+  margin: 12% 0 0 3%;
+}
+.parent .daya hr {
+  border-style: none;
+  border-bottom: 3px solid black;
+}
+.parent .daya h3 {
+  font-size: 1.4rem;
+  font-family: roboto;
+  text-transform: capitalize;
+}
+.parent .daya p {
+  font-family: raleway;
+  font-size: 1rem;
+  color: gray;
+  position: relative;
+  bottom: 6px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .parent {
+    flex-direction: column;
+  }
+}
+.diff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.cardss {
+  font-size: 1.4rem;
+  box-shadow: rgba(175, 172, 169, 0.2) 0px 7px 29px 0px;
+  border-radius: 4px;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+.strong {
+  margin-bottom: 7px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: tilt neon;
+  font-size: 2.3rem;
+}
+
+.st {
+  color: rgb(14, 156, 238);
+}
+
+.se {
+  color: rgb(255, 0, 140);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .diff {
+    display: flex;
+    flex-direction: column;
+  }
+}
+* {
+  padding: 0.5% 3% 0 2%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.panel {
+  scale: 0.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  * {
+    padding: 1px;
+  }
+}/*# sourceMappingURL=style.css.map */
